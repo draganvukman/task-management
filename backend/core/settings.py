@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     # Local apps
     'users',
     'tasks',
-    'teams',
+    'api',
 ]
 
 MIDDLEWARE = [
