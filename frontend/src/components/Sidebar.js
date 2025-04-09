@@ -37,6 +37,18 @@ const Sidebar = () => {
                         key={item.text}
                         onClick={() => navigate(item.path)}
                         selected={location.pathname === item.path}
+                        sx={{
+                            cursor: 'pointer',
+                            '&:hover': {
+                                backgroundColor: 'rgba(0, 0, 0, 0.04)',
+                            },
+                            '&.Mui-selected': {
+                                backgroundColor: 'rgba(25, 118, 210, 0.08)',
+                                '&:hover': {
+                                    backgroundColor: 'rgba(25, 118, 210, 0.12)',
+                                },
+                            },
+                        }}
                     >
                         <ListItemIcon>{item.icon}</ListItemIcon>
                         <ListItemText primary={item.text} />
